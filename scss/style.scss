@@ -53,14 +53,35 @@ $form-floating-label-transform:   scale(.75) translateY(-.5rem) translateX(.15re
 
 
 //reduced buttons
+
 @each $color, $value in $theme-colors {
   .btn-reduced-#{$color} {
-    background-color: $white;
-    border-color: tint-color($value, 30%);
-    color: $value;
-    font-weight: 500;
+    --#{$prefix}btn-font-weight: 500;
+    --#{$prefix}btn-color: #{$value};
+    --#{$prefix}btn-bg: #{$white};
+    --#{$prefix}btn-border-color: #{tint-color($value, 30%)};
+    --#{$prefix}btn-hover-color: #{$value};
+    --#{$prefix}btn-hover-bg: #{tint-color($value, 90%)};
+    --#{$prefix}btn-hover-border-color: #{tint-color($value, 30%)};
+    --#{$prefix}btn-focus-shadow-rgb: #{to-rgb(mix($value, $value, 15%))};
+    --#{$prefix}btn-active-color: #{$value};
+    --#{$prefix}btn-active-bg: #{tint-color($value, 85%)};
+    --#{$prefix}btn-active-border-color: #{tint-color($value, 30%)};
+    --#{$prefix}btn-active-shadow: #{$btn-active-box-shadow};
+    --#{$prefix}btn-disabled-color: #{color-contrast(tint-color($value, 90%))};
+    --#{$prefix}btn-disabled-bg: #{tint-color($value, 90%)};
+    --#{$prefix}btn-disabled-border-color: #{tint-color($value, 90%)};
 
-    &:hover, &:active, &.active {
+    /*--#{$prefix}btn-bg: #{$white};
+    --#{$prefix}btn-border-color: #{tint-color($value, 30%)};
+    --#{$prefix}btn-color: #{$value};
+    --#{$prefix}btn-font-weight: 500;
+
+    --#{$prefix}btn-hover-color: #{$value};
+    --#{$prefix}btn-hover-bg: #{tint-color($value, 90%)};
+    --#{$prefix}btn-hover-border-color: #{tint-color($value, 30%)};*/
+
+    /*&:hover, &:active, &.active {
       background-color: tint-color($value, 90%);
       border-color: tint-color($value, 30%);
       color: $value;
@@ -70,7 +91,7 @@ $form-floating-label-transform:   scale(.75) translateY(-.5rem) translateX(.15re
       color: shade-color($value, 10%);
       background-color: tint-color($value, 80%);
       box-shadow: 0 0 0 $input-btn-focus-width rgba($value, 0.25);
-    }
+    }*/
   }
 }
 

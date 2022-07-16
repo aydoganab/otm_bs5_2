@@ -7409,139 +7409,299 @@ textarea.form-control-lg {
   }
 }
 .btn-reduced-primary {
-  background-color: #fff;
-  border-color: #569afe;
-  color: #0d6efd;
-  font-weight: 500;
-}
-.btn-reduced-primary:hover, .btn-reduced-primary:active, .btn-reduced-primary.active {
-  background-color: #e7f1ff;
-  border-color: #569afe;
-  color: #0d6efd;
-}
-.btn-reduced-primary:focus {
-  color: #0c63e4;
-  background-color: #cfe2ff;
-  box-shadow: 0 0 0 1px rgba(13, 110, 253, 0.25);
+  --otm-btn-font-weight: 500;
+  --otm-btn-color: #0d6efd;
+  --otm-btn-bg: #fff;
+  --otm-btn-border-color: #569afe;
+  --otm-btn-hover-color: #0d6efd;
+  --otm-btn-hover-bg: #e7f1ff;
+  --otm-btn-hover-border-color: #569afe;
+  --otm-btn-focus-shadow-rgb: 13, 110, 253;
+  --otm-btn-active-color: #0d6efd;
+  --otm-btn-active-bg: #dbe9ff;
+  --otm-btn-active-border-color: #569afe;
+  --otm-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --otm-btn-disabled-color: #000;
+  --otm-btn-disabled-bg: #e7f1ff;
+  --otm-btn-disabled-border-color: #e7f1ff;
+  /*--otm-btn-bg: #fff;
+  --otm-btn-border-color: #569afe;
+  --otm-btn-color: #0d6efd;
+  --otm-btn-font-weight: 500;
+
+  --otm-btn-hover-color: #0d6efd;
+  --otm-btn-hover-bg: #e7f1ff;
+  --otm-btn-hover-border-color: #569afe;*/
+  /*&:hover, &:active, &.active {
+    background-color: tint-color($value, 90%);
+    border-color: tint-color($value, 30%);
+    color: $value;
+  }
+
+  &:focus {
+    color: shade-color($value, 10%);
+    background-color: tint-color($value, 80%);
+    box-shadow: 0 0 0 $input-btn-focus-width rgba($value, 0.25);
+  }*/
 }
 
 .btn-reduced-secondary {
-  background-color: #fff;
-  border-color: #989ea4;
-  color: #6c757d;
-  font-weight: 500;
-}
-.btn-reduced-secondary:hover, .btn-reduced-secondary:active, .btn-reduced-secondary.active {
-  background-color: #f0f1f2;
-  border-color: #989ea4;
-  color: #6c757d;
-}
-.btn-reduced-secondary:focus {
-  color: #616971;
-  background-color: #e2e3e5;
-  box-shadow: 0 0 0 1px rgba(108, 117, 125, 0.25);
+  --otm-btn-font-weight: 500;
+  --otm-btn-color: #6c757d;
+  --otm-btn-bg: #fff;
+  --otm-btn-border-color: #989ea4;
+  --otm-btn-hover-color: #6c757d;
+  --otm-btn-hover-bg: #f0f1f2;
+  --otm-btn-hover-border-color: #989ea4;
+  --otm-btn-focus-shadow-rgb: 108, 117, 125;
+  --otm-btn-active-color: #6c757d;
+  --otm-btn-active-bg: #e9eaec;
+  --otm-btn-active-border-color: #989ea4;
+  --otm-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --otm-btn-disabled-color: #000;
+  --otm-btn-disabled-bg: #f0f1f2;
+  --otm-btn-disabled-border-color: #f0f1f2;
+  /*--otm-btn-bg: #fff;
+  --otm-btn-border-color: #989ea4;
+  --otm-btn-color: #6c757d;
+  --otm-btn-font-weight: 500;
+
+  --otm-btn-hover-color: #6c757d;
+  --otm-btn-hover-bg: #f0f1f2;
+  --otm-btn-hover-border-color: #989ea4;*/
+  /*&:hover, &:active, &.active {
+    background-color: tint-color($value, 90%);
+    border-color: tint-color($value, 30%);
+    color: $value;
+  }
+
+  &:focus {
+    color: shade-color($value, 10%);
+    background-color: tint-color($value, 80%);
+    box-shadow: 0 0 0 $input-btn-focus-width rgba($value, 0.25);
+  }*/
 }
 
 .btn-reduced-success {
-  background-color: #fff;
-  border-color: #5eab87;
-  color: #198754;
-  font-weight: 500;
-}
-.btn-reduced-success:hover, .btn-reduced-success:active, .btn-reduced-success.active {
-  background-color: #e8f3ee;
-  border-color: #5eab87;
-  color: #198754;
-}
-.btn-reduced-success:focus {
-  color: #177a4c;
-  background-color: #d1e7dd;
-  box-shadow: 0 0 0 1px rgba(25, 135, 84, 0.25);
+  --otm-btn-font-weight: 500;
+  --otm-btn-color: #198754;
+  --otm-btn-bg: #fff;
+  --otm-btn-border-color: #5eab87;
+  --otm-btn-hover-color: #198754;
+  --otm-btn-hover-bg: #e8f3ee;
+  --otm-btn-hover-border-color: #5eab87;
+  --otm-btn-focus-shadow-rgb: 25, 135, 84;
+  --otm-btn-active-color: #198754;
+  --otm-btn-active-bg: #ddede5;
+  --otm-btn-active-border-color: #5eab87;
+  --otm-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --otm-btn-disabled-color: #000;
+  --otm-btn-disabled-bg: #e8f3ee;
+  --otm-btn-disabled-border-color: #e8f3ee;
+  /*--otm-btn-bg: #fff;
+  --otm-btn-border-color: #5eab87;
+  --otm-btn-color: #198754;
+  --otm-btn-font-weight: 500;
+
+  --otm-btn-hover-color: #198754;
+  --otm-btn-hover-bg: #e8f3ee;
+  --otm-btn-hover-border-color: #5eab87;*/
+  /*&:hover, &:active, &.active {
+    background-color: tint-color($value, 90%);
+    border-color: tint-color($value, 30%);
+    color: $value;
+  }
+
+  &:focus {
+    color: shade-color($value, 10%);
+    background-color: tint-color($value, 80%);
+    box-shadow: 0 0 0 $input-btn-focus-width rgba($value, 0.25);
+  }*/
 }
 
 .btn-reduced-info {
-  background-color: #fff;
-  border-color: #56daf5;
-  color: #0dcaf0;
-  font-weight: 500;
-}
-.btn-reduced-info:hover, .btn-reduced-info:active, .btn-reduced-info.active {
-  background-color: #e7fafe;
-  border-color: #56daf5;
-  color: #0dcaf0;
-}
-.btn-reduced-info:focus {
-  color: #0cb6d8;
-  background-color: #cff4fc;
-  box-shadow: 0 0 0 1px rgba(13, 202, 240, 0.25);
+  --otm-btn-font-weight: 500;
+  --otm-btn-color: #0dcaf0;
+  --otm-btn-bg: #fff;
+  --otm-btn-border-color: #56daf5;
+  --otm-btn-hover-color: #0dcaf0;
+  --otm-btn-hover-bg: #e7fafe;
+  --otm-btn-hover-border-color: #56daf5;
+  --otm-btn-focus-shadow-rgb: 13, 202, 240;
+  --otm-btn-active-color: #0dcaf0;
+  --otm-btn-active-bg: #dbf7fd;
+  --otm-btn-active-border-color: #56daf5;
+  --otm-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --otm-btn-disabled-color: #000;
+  --otm-btn-disabled-bg: #e7fafe;
+  --otm-btn-disabled-border-color: #e7fafe;
+  /*--otm-btn-bg: #fff;
+  --otm-btn-border-color: #56daf5;
+  --otm-btn-color: #0dcaf0;
+  --otm-btn-font-weight: 500;
+
+  --otm-btn-hover-color: #0dcaf0;
+  --otm-btn-hover-bg: #e7fafe;
+  --otm-btn-hover-border-color: #56daf5;*/
+  /*&:hover, &:active, &.active {
+    background-color: tint-color($value, 90%);
+    border-color: tint-color($value, 30%);
+    color: $value;
+  }
+
+  &:focus {
+    color: shade-color($value, 10%);
+    background-color: tint-color($value, 80%);
+    box-shadow: 0 0 0 $input-btn-focus-width rgba($value, 0.25);
+  }*/
 }
 
 .btn-reduced-warning {
-  background-color: #fff;
-  border-color: #ffd451;
-  color: #ffc107;
-  font-weight: 500;
-}
-.btn-reduced-warning:hover, .btn-reduced-warning:active, .btn-reduced-warning.active {
-  background-color: #fff9e6;
-  border-color: #ffd451;
-  color: #ffc107;
-}
-.btn-reduced-warning:focus {
-  color: #e6ae06;
-  background-color: #fff3cd;
-  box-shadow: 0 0 0 1px rgba(255, 193, 7, 0.25);
+  --otm-btn-font-weight: 500;
+  --otm-btn-color: #ffc107;
+  --otm-btn-bg: #fff;
+  --otm-btn-border-color: #ffd451;
+  --otm-btn-hover-color: #ffc107;
+  --otm-btn-hover-bg: #fff9e6;
+  --otm-btn-hover-border-color: #ffd451;
+  --otm-btn-focus-shadow-rgb: 255, 193, 7;
+  --otm-btn-active-color: #ffc107;
+  --otm-btn-active-bg: #fff6da;
+  --otm-btn-active-border-color: #ffd451;
+  --otm-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --otm-btn-disabled-color: #000;
+  --otm-btn-disabled-bg: #fff9e6;
+  --otm-btn-disabled-border-color: #fff9e6;
+  /*--otm-btn-bg: #fff;
+  --otm-btn-border-color: #ffd451;
+  --otm-btn-color: #ffc107;
+  --otm-btn-font-weight: 500;
+
+  --otm-btn-hover-color: #ffc107;
+  --otm-btn-hover-bg: #fff9e6;
+  --otm-btn-hover-border-color: #ffd451;*/
+  /*&:hover, &:active, &.active {
+    background-color: tint-color($value, 90%);
+    border-color: tint-color($value, 30%);
+    color: $value;
+  }
+
+  &:focus {
+    color: shade-color($value, 10%);
+    background-color: tint-color($value, 80%);
+    box-shadow: 0 0 0 $input-btn-focus-width rgba($value, 0.25);
+  }*/
 }
 
 .btn-reduced-danger {
-  background-color: #fff;
-  border-color: #e7727d;
-  color: #dc3545;
-  font-weight: 500;
-}
-.btn-reduced-danger:hover, .btn-reduced-danger:active, .btn-reduced-danger.active {
-  background-color: #fcebec;
-  border-color: #e7727d;
-  color: #dc3545;
-}
-.btn-reduced-danger:focus {
-  color: #c6303e;
-  background-color: #f8d7da;
-  box-shadow: 0 0 0 1px rgba(220, 53, 69, 0.25);
+  --otm-btn-font-weight: 500;
+  --otm-btn-color: #dc3545;
+  --otm-btn-bg: #fff;
+  --otm-btn-border-color: #e7727d;
+  --otm-btn-hover-color: #dc3545;
+  --otm-btn-hover-bg: #fcebec;
+  --otm-btn-hover-border-color: #e7727d;
+  --otm-btn-focus-shadow-rgb: 220, 53, 69;
+  --otm-btn-active-color: #dc3545;
+  --otm-btn-active-bg: #fae1e3;
+  --otm-btn-active-border-color: #e7727d;
+  --otm-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --otm-btn-disabled-color: #000;
+  --otm-btn-disabled-bg: #fcebec;
+  --otm-btn-disabled-border-color: #fcebec;
+  /*--otm-btn-bg: #fff;
+  --otm-btn-border-color: #e7727d;
+  --otm-btn-color: #dc3545;
+  --otm-btn-font-weight: 500;
+
+  --otm-btn-hover-color: #dc3545;
+  --otm-btn-hover-bg: #fcebec;
+  --otm-btn-hover-border-color: #e7727d;*/
+  /*&:hover, &:active, &.active {
+    background-color: tint-color($value, 90%);
+    border-color: tint-color($value, 30%);
+    color: $value;
+  }
+
+  &:focus {
+    color: shade-color($value, 10%);
+    background-color: tint-color($value, 80%);
+    box-shadow: 0 0 0 $input-btn-focus-width rgba($value, 0.25);
+  }*/
 }
 
 .btn-reduced-light {
-  background-color: #fff;
-  border-color: #fafbfc;
-  color: #f8f9fa;
-  font-weight: 500;
-}
-.btn-reduced-light:hover, .btn-reduced-light:active, .btn-reduced-light.active {
-  background-color: #fefeff;
-  border-color: #fafbfc;
-  color: #f8f9fa;
-}
-.btn-reduced-light:focus {
-  color: #dfe0e1;
-  background-color: #fefefe;
-  box-shadow: 0 0 0 1px rgba(248, 249, 250, 0.25);
+  --otm-btn-font-weight: 500;
+  --otm-btn-color: #f8f9fa;
+  --otm-btn-bg: #fff;
+  --otm-btn-border-color: #fafbfc;
+  --otm-btn-hover-color: #f8f9fa;
+  --otm-btn-hover-bg: #fefeff;
+  --otm-btn-hover-border-color: #fafbfc;
+  --otm-btn-focus-shadow-rgb: 248, 249, 250;
+  --otm-btn-active-color: #f8f9fa;
+  --otm-btn-active-bg: #fefefe;
+  --otm-btn-active-border-color: #fafbfc;
+  --otm-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --otm-btn-disabled-color: #000;
+  --otm-btn-disabled-bg: #fefeff;
+  --otm-btn-disabled-border-color: #fefeff;
+  /*--otm-btn-bg: #fff;
+  --otm-btn-border-color: #fafbfc;
+  --otm-btn-color: #f8f9fa;
+  --otm-btn-font-weight: 500;
+
+  --otm-btn-hover-color: #f8f9fa;
+  --otm-btn-hover-bg: #fefeff;
+  --otm-btn-hover-border-color: #fafbfc;*/
+  /*&:hover, &:active, &.active {
+    background-color: tint-color($value, 90%);
+    border-color: tint-color($value, 30%);
+    color: $value;
+  }
+
+  &:focus {
+    color: shade-color($value, 10%);
+    background-color: tint-color($value, 80%);
+    box-shadow: 0 0 0 $input-btn-focus-width rgba($value, 0.25);
+  }*/
 }
 
 .btn-reduced-dark {
-  background-color: #fff;
-  border-color: #646669;
-  color: #212529;
-  font-weight: 500;
-}
-.btn-reduced-dark:hover, .btn-reduced-dark:active, .btn-reduced-dark.active {
-  background-color: #e9e9ea;
-  border-color: #646669;
-  color: #212529;
-}
-.btn-reduced-dark:focus {
-  color: #1e2125;
-  background-color: #d3d3d4;
-  box-shadow: 0 0 0 1px rgba(33, 37, 41, 0.25);
+  --otm-btn-font-weight: 500;
+  --otm-btn-color: #212529;
+  --otm-btn-bg: #fff;
+  --otm-btn-border-color: #646669;
+  --otm-btn-hover-color: #212529;
+  --otm-btn-hover-bg: #e9e9ea;
+  --otm-btn-hover-border-color: #646669;
+  --otm-btn-focus-shadow-rgb: 33, 37, 41;
+  --otm-btn-active-color: #212529;
+  --otm-btn-active-bg: #dededf;
+  --otm-btn-active-border-color: #646669;
+  --otm-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --otm-btn-disabled-color: #000;
+  --otm-btn-disabled-bg: #e9e9ea;
+  --otm-btn-disabled-border-color: #e9e9ea;
+  /*--otm-btn-bg: #fff;
+  --otm-btn-border-color: #646669;
+  --otm-btn-color: #212529;
+  --otm-btn-font-weight: 500;
+
+  --otm-btn-hover-color: #212529;
+  --otm-btn-hover-bg: #e9e9ea;
+  --otm-btn-hover-border-color: #646669;*/
+  /*&:hover, &:active, &.active {
+    background-color: tint-color($value, 90%);
+    border-color: tint-color($value, 30%);
+    color: $value;
+  }
+
+  &:focus {
+    color: shade-color($value, 10%);
+    background-color: tint-color($value, 80%);
+    box-shadow: 0 0 0 $input-btn-focus-width rgba($value, 0.25);
+  }*/
 }
 
 .btn-flat-primary {
