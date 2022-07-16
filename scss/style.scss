@@ -2,8 +2,16 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "colors";
 
+$prefix: otm-;
+
 $body-bg: $gray-100;
+
+$font-size-root: 16px;
+//$font-family-base: Helvetica, Arial, sans-serif;
+
+$link-color: shade-color($primary, 10%);
 $link-decoration: none;
+$link-shade-percentage: 30%;
 
 $display-font-sizes: (
         1: 4rem,
@@ -13,6 +21,11 @@ $display-font-sizes: (
         5: 2rem,
         6: 1.5rem
 );
+
+$input-btn-focus-width: 1px;
+
+$form-floating-label-opacity:     .75;
+$form-floating-label-transform:   scale(.75) translateY(-.5rem) translateX(.15rem);
 
 @import "../node_modules/bootstrap/scss/variables";
 
@@ -38,6 +51,50 @@ $display-font-sizes: (
 @import "../node_modules/bootstrap/scss/helpers";
 @import "../node_modules/bootstrap/scss/utilities/api";
 
+
+//reduced buttons
+@each $color, $value in $theme-colors {
+  .btn-reduced-#{$color} {
+    background-color: $white;
+    border-color: tint-color($value, 30%);
+    color: $value;
+    font-weight: 500;
+
+    &:hover, &:active, &.active {
+      background-color: tint-color($value, 90%);
+      border-color: tint-color($value, 30%);
+      color: $value;
+    }
+
+    &:focus {
+      color: shade-color($value, 10%);
+      background-color: tint-color($value, 80%);
+      box-shadow: 0 0 0 $input-btn-focus-width rgba($value, 0.25);
+    }
+  }
+}
+
+//flat buttons
+@each $color, $value in $theme-colors {
+  .btn-flat-#{$color} {
+    color: $value;
+    font-weight: 500;
+
+    &:hover {
+      color: shade-color($value, 5%);
+      background-color: rgba($value, 0.07);
+    }
+
+    &:focus, &:active, &.active {
+      background-color: rgba($value, 0.2);
+      border-color: rgba($value, 0);
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 $input-btn-focus-width rgba($value, 0.25);
+    }
+  }
+}
 
 //fontawesome
 $fa-font-path:"../fonts";
