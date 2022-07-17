@@ -71,49 +71,28 @@ $form-floating-label-transform:   scale(.75) translateY(-.5rem) translateX(.15re
     --#{$prefix}btn-disabled-color: #{color-contrast(tint-color($value, 90%))};
     --#{$prefix}btn-disabled-bg: #{tint-color($value, 90%)};
     --#{$prefix}btn-disabled-border-color: #{tint-color($value, 90%)};
-
-    /*--#{$prefix}btn-bg: #{$white};
-    --#{$prefix}btn-border-color: #{tint-color($value, 30%)};
-    --#{$prefix}btn-color: #{$value};
-    --#{$prefix}btn-font-weight: 500;
-
-    --#{$prefix}btn-hover-color: #{$value};
-    --#{$prefix}btn-hover-bg: #{tint-color($value, 90%)};
-    --#{$prefix}btn-hover-border-color: #{tint-color($value, 30%)};*/
-
-    /*&:hover, &:active, &.active {
-      background-color: tint-color($value, 90%);
-      border-color: tint-color($value, 30%);
-      color: $value;
-    }
-
-    &:focus {
-      color: shade-color($value, 10%);
-      background-color: tint-color($value, 80%);
-      box-shadow: 0 0 0 $input-btn-focus-width rgba($value, 0.25);
-    }*/
   }
 }
 
 //flat buttons
 @each $color, $value in $theme-colors {
   .btn-flat-#{$color} {
-    color: $value;
-    font-weight: 500;
 
-    &:hover {
-      color: shade-color($value, 5%);
-      background-color: rgba($value, 0.07);
-    }
-
-    &:focus, &:active, &.active {
-      background-color: rgba($value, 0.2);
-      border-color: rgba($value, 0);
-    }
-
-    &:focus {
-      box-shadow: 0 0 0 $input-btn-focus-width rgba($value, 0.25);
-    }
+    --#{$prefix}btn-font-weight: 500;
+    --#{$prefix}btn-color: #{$value};
+    --#{$prefix}btn-bg: #{$white};
+    --#{$prefix}btn-border-color: #{$white};
+    --#{$prefix}btn-hover-color: #{shade-color($value, 10%)};
+    --#{$prefix}btn-hover-bg: #{tint-color($value, 90%)};
+    --#{$prefix}btn-hover-border-color: #{tint-color($value, 100%)};
+    --#{$prefix}btn-focus-shadow-rgb: #{to-rgb(tint-color($value, 90%))};
+    --#{$prefix}btn-active-color: #{shade-color($value, 10%)};
+    --#{$prefix}btn-active-bg: #{tint-color($value, 80%)};
+    --#{$prefix}btn-active-border-color: #{rgba($value, 0)};
+    --#{$prefix}btn-active-shadow: #{$btn-active-box-shadow};
+    --#{$prefix}btn-disabled-color: #{color-contrast(tint-color($value, 90%))};
+    --#{$prefix}btn-disabled-bg: #{tint-color($value, 90%)};
+    --#{$prefix}btn-disabled-border-color: #{tint-color($value, 90%)};
   }
 }
 
