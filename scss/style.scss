@@ -27,8 +27,21 @@ $input-btn-focus-width: 1px;
 $form-floating-label-opacity:     .75;
 $form-floating-label-transform:   scale(.75) translateY(-.5rem) translateX(.15rem);
 
+$tooltip-arrow-width: 0rem;
+$tooltip-arrow-height: 0rem;
+$tooltip-opacity: .8;
+
+
+
 @import "../node_modules/bootstrap/scss/variables";
 
+$dropdown-padding-y: 0.5rem;
+$dropdown-padding-x: 0.5rem;
+$dropdown-border-radius: $border-radius;
+$dropdown-item-padding-y: 0.5rem;
+$dropdown-link-hover-bg: $gray-200;
+$dropdown-link-active-bg: $gray-400;
+$dropdown-link-active-color: $body-color;
 
 @import "../node_modules/bootstrap/scss/maps";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -46,6 +59,8 @@ $form-floating-label-transform:   scale(.75) translateY(-.5rem) translateX(.15re
 @import "../node_modules/bootstrap/scss/forms";
 @import "../node_modules/bootstrap/scss/buttons";
 @import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/dropdown";
+@import "../node_modules/bootstrap/scss/tooltip";
 
 
 @import "../node_modules/bootstrap/scss/helpers";
@@ -94,6 +109,10 @@ $form-floating-label-transform:   scale(.75) translateY(-.5rem) translateX(.15re
     --#{$prefix}btn-disabled-bg: #{tint-color($value, 90%)};
     --#{$prefix}btn-disabled-border-color: #{tint-color($value, 90%)};
   }
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 //fontawesome
