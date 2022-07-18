@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,21 +7,36 @@
     <link rel="stylesheet" href="css/otm_bs5_2.css">
     <script src="js/otm_bs5.js"></script>
 </head>
-<body>
+<body class="d-flex h-100">
 
 <div class="container-xxl bg-white shadow-sm">
 
-    <div class="d-flex align-items-center py-2">
+    <div class="d-flex align-items-center py-2 mb-4 mb-md-5">
         <h2 class="me-auto"><i class="fa fa-life-ring text-danger"></i>tm</h2>
         <div class="dropdown me-3">
             <img src="img/user.jpg" alt="User" class="rounded-circle dropdown-toggle cursor-pointer" data-bs-toggle="dropdown">
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Hesap bilgilerim</a></li>
+                <li><a class="dropdown-item" href="#">Resmimi güncelle</a></li>
+                <li><a class="dropdown-item" href="#">Şifremi değiştir</a></li>
+                <li><a class="dropdown-item" href="#">Aktivite geçmişim</a></li>
             </ul>
         </div>
         <a href="logout.html" class="btn btn-flat-dark btn-lg" title="Oturumu kapat" data-bs-toggle="tooltip"><i class="fa fa-sign-out-alt"></i></a>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-3">
+                            <img src="img/user-big.jpg" alt="Abdullah Aydoğan" class="img-fluid rounded-circle">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>

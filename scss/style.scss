@@ -40,8 +40,12 @@ $dropdown-padding-x: 0.5rem;
 $dropdown-border-radius: $border-radius;
 $dropdown-item-padding-y: 0.5rem;
 $dropdown-link-hover-bg: $gray-200;
+$dropdown-link-hover-color: shade-color($primary, 30%);
 $dropdown-link-active-bg: $gray-400;
 $dropdown-link-active-color: $body-color;
+$dropdown-box-shadow: $box-shadow-lg;
+
+$card-border-color: $gray-300;
 
 @import "../node_modules/bootstrap/scss/maps";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -113,6 +117,11 @@ $dropdown-link-active-color: $body-color;
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+
+.dropdown-item{
+  border-radius: $border-radius;
 }
 
 //fontawesome
